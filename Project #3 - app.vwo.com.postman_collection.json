@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "afcb6905-a38a-433b-890d-e18ced664edf",
+		"name": "Project #3 - app.vwo.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36925279",
+		"_collection_link": "https://api-pratice.postman.co/workspace/API-Pratice-Workspace~03b2a880-b895-43ac-87e9-a2a851e4b7cd/collection/36925279-afcb6905-a38a-433b-890d-e18ced664edf?action=share&source=collection_link&creator=36925279"
+	},
+	"item": [
+		{
+			"name": "Login API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"e_var\",\"123\");"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "cookie",
+						"value": "_vwo_uuid=D7058187BC99458FF2A0FAEBEB4B9BA78; _vwo_utm_medium=direct; _vwo_utm_source=direct; _vwo_ssm=1; _vis_opt_exp_1242_combi=2; _vis_opt_exp_1145_combi=2; _vis_opt_exp_1154_combi=2; _vis_opt_exp_216_combi=1; _vis_opt_exp_222_combi=2; _vis_opt_exp_1154_goal_237=1; _vis_opt_exp_1601_combi=1; _vis_opt_exp_1601_goal_2=1; _vis_opt_exp_1601_goal_3=1; ajs_user_id=1377855; ajs_anonymous_id=861bec6c-ef40-48c1-a0e0-4a9131341660; _vwo_uuid_v2=D4BFDF7C9AB9CC9F8BC93B8FB32DD4940|5a80b31f3528c7f3efbd8f9f4d442af9; _ga=GA1.2.1433656608.1733124111; _gid=GA1.2.1627054994.1733124111; _vis_opt_s=8%7C; _vis_opt_test_cookie=1; _gat=1; _vwo_ds=3%3At_1%2Ca_1%3A0%241729922151%3A76.53757057%3A867_184_1_113860_6%2C869_181_1_113860_9%2C235_51_1_113860_1%2C243_51_1_113860_1%2C97_23_1_113860_1%2C96_23_1_113860_1%2C111_0_1_1905841_5%2C119_0_1_1905841_1%2C118_0_1_1905841_1%2C122_0_1_1905841_1%2C135_0_1_1905841_1%2C248_0_1_1905841_1%2C253_0_1_1905841_1%2C1609_184_1_1905841_1%2C266_0_1_2840135_1%3A16_1%2C20_1%2C22_1%2C42_1%2C48_1%2C59_1%2C13_1%3A1608_1%2C1607_1%2C1354_1%2C1353_1%2C627_1%2C231_1%2C172_1%2C65_1%2C28_1%2C23_1%2C15_1%2C14_1%3A1; _vwo_sn=3201959%3A3%3Ar4.visualwebsiteoptimizer.com%3A3%3A1%3Areferrer%3D; _ga_LBVC51CNX9=GS1.2.1733124115.2.1.1733124126.49.0.0; _gcl_au=1.1.1545668026.1730079093.266072207.1733124115.1733124131"
+					},
+					{
+						"key": "origin",
+						"value": "https://app.vwo.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://app.vwo.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"rinutesting21@gmail.com\",\r\n    \"password\":\"Admin@88\",\r\n    \"remember\":false,\r\n    \"recaptcha_response_field\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"login"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://app.vwo.com/login' \\\r\n  -H 'accept: */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -H 'cookie: _vwo_uuid=D7058187BC99458FF2A0FAEBEB4B9BA78; _vwo_utm_medium=direct; _vwo_utm_source=direct; _vwo_ssm=1; _vis_opt_exp_1242_combi=2; _vis_opt_exp_1145_combi=2; _vis_opt_exp_1154_combi=2; _vis_opt_exp_216_combi=1; _vis_opt_exp_222_combi=2; _vis_opt_exp_1154_goal_237=1; _vis_opt_exp_1601_combi=1; _vis_opt_exp_1601_goal_2=1; _vis_opt_exp_1601_goal_3=1; ajs_user_id=1377855; ajs_anonymous_id=861bec6c-ef40-48c1-a0e0-4a9131341660; _vwo_uuid_v2=D4BFDF7C9AB9CC9F8BC93B8FB32DD4940|5a80b31f3528c7f3efbd8f9f4d442af9; _ga=GA1.2.1433656608.1733124111; _gid=GA1.2.1627054994.1733124111; _vis_opt_s=8%7C; _vis_opt_test_cookie=1; _gat=1; _vwo_ds=3%3At_1%2Ca_1%3A0%241729922151%3A76.53757057%3A867_184_1_113860_6%2C869_181_1_113860_9%2C235_51_1_113860_1%2C243_51_1_113860_1%2C97_23_1_113860_1%2C96_23_1_113860_1%2C111_0_1_1905841_5%2C119_0_1_1905841_1%2C118_0_1_1905841_1%2C122_0_1_1905841_1%2C135_0_1_1905841_1%2C248_0_1_1905841_1%2C253_0_1_1905841_1%2C1609_184_1_1905841_1%2C266_0_1_2840135_1%3A16_1%2C20_1%2C22_1%2C42_1%2C48_1%2C59_1%2C13_1%3A1608_1%2C1607_1%2C1354_1%2C1353_1%2C627_1%2C231_1%2C172_1%2C65_1%2C28_1%2C23_1%2C15_1%2C14_1%3A1; _vwo_sn=3201959%3A3%3Ar4.visualwebsiteoptimizer.com%3A3%3A1%3Areferrer%3D; _ga_LBVC51CNX9=GS1.2.1733124115.2.1.1733124126.49.0.0; _gcl_au=1.1.1545668026.1730079093.266072207.1733124115.1733124131' \\\r\n  -H 'origin: https://app.vwo.com' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://app.vwo.com/' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  --data-raw '{\"username\":\"rinutesting21@gmail.com\",\"password\":\"Admin@88\",\"remember\":false,\"recaptcha_response_field\":\"\"}'"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "eb73bb37-1b1d-4df5-9fa0-455daa571c2a",
+		"name": "Project #4 - Opencart APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36925279",
+		"_collection_link": "https://api-pratice.postman.co/workspace/API-Pratice-Workspace~03b2a880-b895-43ac-87e9-a2a851e4b7cd/collection/36925279-eb73bb37-1b1d-4df5-9fa0-455daa571c2a?action=share&source=collection_link&creator=36925279"
+	},
+	"item": [
+		{
+			"name": "Register API OpenCart",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "cookie",
+						"value": "OCSESSID=1f04e63fd29c22e287a55fbd0a; language=en-gb; currency=USD"
+					},
+					{
+						"key": "priority",
+						"value": "u=0, i"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "none"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0"
+					},
+					{
+						"key": "Referer",
+						"value": "https://awesomeqa.com/ui/index.php"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0"
+					}
+				],
+				"url": {
+					"raw": "https://awesomeqa.com/ui/index.php",
+					"protocol": "https",
+					"host": [
+						"awesomeqa",
+						"com"
+					],
+					"path": [
+						"ui",
+						"index.php"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://awesomeqa.com/ui/index.php' \\\r\n  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'cookie: OCSESSID=1f04e63fd29c22e287a55fbd0a; language=en-gb; currency=USD' \\\r\n  -H 'priority: u=0, i' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: document' \\\r\n  -H 'sec-fetch-mode: navigate' \\\r\n  -H 'sec-fetch-site: none' \\\r\n  -H 'sec-fetch-user: ?1' \\\r\n  -H 'upgrade-insecure-requests: 1' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/jquery/jquery-2.1.1.min.js' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/bootstrap/css/bootstrap.min.css' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/bootstrap/js/bootstrap.min.js' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/font-awesome/css/font-awesome.min.css' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/theme/default/stylesheet/stylesheet.css' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/jquery/swiper/css/swiper.min.css' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/jquery/swiper/css/opencart.css' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/jquery/swiper/js/swiper.jquery.min.js' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/common.js' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/catalog/opencart-logo.png' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/banners/iPhone6-1140x380.jpg' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/banners/MacBookAir-1140x380.jpg' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/macbook_1-200x200.jpg' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/iphone_1-200x200.jpg' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/apple_cinema_30-200x200.jpg' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/canon_eos_5d_1-200x200.jpg' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/manufacturer/nfl-130x100.png' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/manufacturer/redbull-130x100.png' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/manufacturer/sony-130x100.png' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/manufacturer/cocacola-130x100.png' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/manufacturer/burgerking-130x100.png' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/manufacturer/canon-130x100.png' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/manufacturer/harley-130x100.png' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/manufacturer/dell-130x100.png' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/manufacturer/disney-130x100.png' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/manufacturer/starbucks-130x100.png' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/cache/catalog/demo/manufacturer/nintendo-130x100.png' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0' -H 'Referer;' ;\r\ncurl 'https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2' -H 'Referer;'"
+			},
+			"response": []
+		},
+		{
+			"name": "Login API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "cache-control",
+						"value": "max-age=0"
+					},
+					{
+						"key": "cookie",
+						"value": "OCSESSID=1f04e63fd29c22e287a55fbd0a; language=en-gb; currency=USD"
+					},
+					{
+						"key": "origin",
+						"value": "https://awesomeqa.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=0, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://awesomeqa.com/ui/index.php?route=account/login"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0"
+					},
+					{
+						"key": "Referer",
+						"value": "https://awesomeqa.com/ui/index.php?route=account/login"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "mira1rajput1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "mira@88",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://awesomeqa.com/ui/index.php?route=account/login",
+					"protocol": "https",
+					"host": [
+						"awesomeqa",
+						"com"
+					],
+					"path": [
+						"ui",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "route",
+							"value": "account/login"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://awesomeqa.com/ui/index.php?route=account/login' \\\r\n  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'cache-control: max-age=0' \\\r\n  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary6nhBHO5V6AezVjud' \\\r\n  -H 'cookie: OCSESSID=1f04e63fd29c22e287a55fbd0a; language=en-gb; currency=USD' \\\r\n  -H 'origin: https://awesomeqa.com' \\\r\n  -H 'priority: u=0, i' \\\r\n  -H 'referer: https://awesomeqa.com/ui/index.php?route=account/login' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: document' \\\r\n  -H 'sec-fetch-mode: navigate' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'sec-fetch-user: ?1' \\\r\n  -H 'upgrade-insecure-requests: 1' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  --data-raw $'------WebKitFormBoundary6nhBHO5V6AezVjud\\r\\nContent-Disposition: form-data; name=\"email\"\\r\\n\\r\\nmira1rajput1@gmail.com\\r\\n------WebKitFormBoundary6nhBHO5V6AezVjud\\r\\nContent-Disposition: form-data; name=\"password\"\\r\\n\\r\\nmira@88\\r\\n------WebKitFormBoundary6nhBHO5V6AezVjud--\\r\\n' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/jquery/jquery-2.1.1.min.js' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php?route=account/login' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/bootstrap/css/bootstrap.min.css' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php?route=account/login' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/bootstrap/js/bootstrap.min.js' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php?route=account/login' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/font-awesome/css/font-awesome.min.css' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php?route=account/login' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/theme/default/stylesheet/stylesheet.css' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php?route=account/login' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/common.js' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php?route=account/login' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/image/catalog/opencart-logo.png' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'Referer: https://awesomeqa.com/ui/index.php?route=account/login' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0' \\\r\n  -H 'sec-ch-ua: \"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' ;\r\ncurl 'https://awesomeqa.com/ui/catalog/view/javascript/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0' -H 'Referer;' ;\r\ncurl 'https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2' -H 'Referer;' ;\r\ncurl 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xLjI2IDkuNkE2Ljk3IDYuOTcgMCAwMTggNGMzLjIgMCA2LjA2IDIuMzMgNi43NCA1LjZhLjUuNSAwIDAwLjk4LS4yQTcuOTcgNy45NyAwIDAwOCAzIDcuOTcgNy45NyAwIDAwLjI4IDkuNGEuNS41IDAgMDAuOTguMnoiIGZpbGw9IldpbmRvd1RleHQiLz48cGF0aCBkPSJNOCA2YTMuNSAzLjUgMCAxMDAgNyAzLjUgMy41IDAgMDAwLTd6TTUuNSA5LjVhMi41IDIuNSAwIDExNSAwIDIuNSAyLjUgMCAwMS01IDB6IiBmaWxsPSJXaW5kb3dUZXh0Ii8+DQo8L3N2Zz4=' -H 'Referer;'"
+			},
+			"response": []
+		}
+	]
+}
