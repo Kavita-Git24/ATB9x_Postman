@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "d0c15d39-a77d-40ce-9f14-2f258707e908",
+		"name": "Project #5 - Katalon demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36925279",
+		"_collection_link": "https://api-pratice.postman.co/workspace/API-Pratice-Workspace~03b2a880-b895-43ac-87e9-a2a851e4b7cd/collection/36925279-d0c15d39-a77d-40ce-9f14-2f258707e908?action=share&source=collection_link&creator=36925279"
+	},
+	"item": [
+		{
+			"name": "Login API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "username",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ThisIsNotAPassword",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://katalon-demo-cura.herokuapp.com/#appointment",
+					"protocol": "https",
+					"host": [
+						"katalon-demo-cura",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"hash": "appointment"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make appointment API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "facility",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://katalon-demo-cura.herokuapp.com/authenticate.php?facility=Seoul CURA Healthcare Center\n&hospital_readmission=Yes&programs=Medicaid&visit_date=25/09/2024&comment=dasdasda",
+					"protocol": "https",
+					"host": [
+						"katalon-demo-cura",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"authenticate.php"
+					],
+					"query": [
+						{
+							"key": "facility",
+							"value": "Seoul CURA Healthcare Center\n"
+						},
+						{
+							"key": "hospital_readmission",
+							"value": "Yes"
+						},
+						{
+							"key": "programs",
+							"value": "Medicaid"
+						},
+						{
+							"key": "visit_date",
+							"value": "25/09/2024"
+						},
+						{
+							"key": "comment",
+							"value": "dasdasda"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
