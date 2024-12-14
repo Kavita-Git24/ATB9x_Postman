@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "96a3ae2e-2739-441b-8ec5-0c42830208a3",
+		"name": "Imgur API - OAuth2 Manually",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36925279",
+		"_collection_link": "https://api-pratice.postman.co/workspace/API-Pratice-Workspace~03b2a880-b895-43ac-87e9-a2a851e4b7cd/collection/36925279-96a3ae2e-2739-441b-8ec5-0c42830208a3?action=share&source=collection_link&creator=36925279"
+	},
+	"item": [
+		{
+			"name": "Get Image",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Client-ID {{clientId}}"
+					}
+				],
+				"url": {
+					"raw": "https://api.imgur.com/3/image/{{imageHash}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"imgur",
+						"com"
+					],
+					"path": [
+						"3",
+						"image",
+						"{{imageHash}}"
+					]
+				},
+				"description": "Generated from cURL: curl --location -g 'https://api.imgur.com/3/image/{{imageHash}}' \\\r\n--header 'Authorization: Client-ID {{clientId}}'"
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Image",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a7293878c6f8e43b5886cd9ffecbc0cb7a5a62d2",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Client-ID {{clientId}}"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Kavita singh/OneDrive/Desktop/baby.png"
+						},
+						{
+							"key": "type",
+							"value": "image",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Simple upload",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "This is a simple image upload in Imgur",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.imgur.com/3/image",
+					"protocol": "https",
+					"host": [
+						"api",
+						"imgur",
+						"com"
+					],
+					"path": [
+						"3",
+						"image"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://api.imgur.com/3/image' \\\r\n--header 'Authorization: Client-ID {{clientId}}' \\\r\n--form 'image=@\"/home/flakrim/Downloads/GHJQTpX.jpeg\"' \\\r\n--form 'type=\"image\"' \\\r\n--form 'title=\"Simple upload\"' \\\r\n--form 'description=\"This is a simple image upload in Imgur\"'"
+			},
+			"response": []
+		}
+	]
+}
