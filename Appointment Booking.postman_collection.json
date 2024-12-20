@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "5d14d012-996d-42ad-aa48-2551801ff748",
+		"name": "Appointment Booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36925279",
+		"_collection_link": "https://api-pratice.postman.co/workspace/API-Pratice-Workspace~03b2a880-b895-43ac-87e9-a2a851e4b7cd/collection/36925279-5d14d012-996d-42ad-aa48-2551801ff748?action=share&source=collection_link&creator=36925279"
+	},
+	"item": [
+		{
+			"name": "Get All Appointment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Got All Appointment with Status code: 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{app_url}}",
+					"host": [
+						"{{app_url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Appointment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Appointment Created with Status code: 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"id\": \"30\",\r\n      \"name\": \"Rajendra\",\r\n      \"age\": 25,\r\n      \"appointment_date\": \"2024-12-11\",\r\n      \"doctor_name\": \"Dr.Saral\",\r\n      \"comment\" : \"Body Checkup\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{app_url}}",
+					"host": [
+						"{{app_url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Appointment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Appointment Updated with Status code: 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"id\": \"30\",\r\n      \"name\": \"Sohan\",\r\n      \"age\": 85,\r\n      \"appointment_date\": \"2024-12-11\",\r\n      \"doctor_name\": \"Dr.Satya\",\r\n      \"comment\" : \"Body Checkup\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{app_url}}/30",
+					"host": [
+						"{{app_url}}"
+					],
+					"path": [
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Partial Update Appointment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Appointment Partially Updated with Status code: 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"id\": \"30\",\r\n      \"name\": \"Malini\",\r\n      \"age\": 80\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{app_url}}/30",
+					"host": [
+						"{{app_url}}"
+					],
+					"path": [
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Appointment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Appointment Deleted with Status code: 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{app_url}}/30",
+					"host": [
+						"{{app_url}}"
+					],
+					"path": [
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Appointment by Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Got All Appointment with Status code: 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{app_url}}/30",
+					"host": [
+						"{{app_url}}"
+					],
+					"path": [
+						"30"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
